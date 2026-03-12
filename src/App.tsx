@@ -11,9 +11,19 @@ function App() {
         <div className="app-container">
           <header className="main-header glass">
             <nav>
-              <Link to="/" className="logo gradient-text">Omkar AI</Link>
+              <Link to="/" className="logo-container">
+                <img src="/omkar.jpg" alt="Omkar Arali" className="header-avatar" />
+                <span className="logo gradient-text">Omkar AI</span>
+              </Link>
               <div className="nav-links">
                 <Link to="/">Chat</Link>
+                <a
+                  href="/Omkar Arali_Resume.pdf"
+                  download="Omkar_Arali_Resume.pdf"
+                  className="resume-btn"
+                >
+                  Resume
+                </a>
                 {/* Admin links hidden from main view for recruiters */}
               </div>
             </nav>

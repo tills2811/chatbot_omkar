@@ -19,6 +19,26 @@ nav {
   width: 100%;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  transition: var(--s-fast);
+}
+
+.logo-container:hover {
+  opacity: 0.8;
+}
+
+.header-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -42,6 +62,27 @@ nav {
 .logo:hover {
   color: var(--text-bright);
   opacity: 0.8;
+}
+
+.resume-btn {
+  background: var(--primary-gradient);
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600 !important;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  opacity: 1 !important;
+  filter: brightness(1.1);
 }
 
 

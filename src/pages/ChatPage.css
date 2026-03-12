@@ -51,6 +51,39 @@
     color: var(--text-muted);
 }
 
+.bot-avatar-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--primary);
+    background: white;
+}
+
+.bot-avatar-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bot-msg-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--primary);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-msg-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .messages-list {
     flex: 1;
     overflow-y: auto;

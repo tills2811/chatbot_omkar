@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, User, Bot, Sparkles } from 'lucide-react';
+import { Send, User } from 'lucide-react';
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useAppContext } from '../context/AppContext';
@@ -224,8 +224,8 @@ const ChatPage = () => {
             <div className="chat-container glass glass-shadow">
                 <div className="chat-header">
                     <div className="bot-info">
-                        <div className="bot-avatar">
-                            <Sparkles size={20} color="var(--primary)" />
+                        <div className="bot-avatar-img">
+                            <img src="/omkar.jpg" alt="Omkar" />
                         </div>
                         <div>
                             <h3>Process Excellence Manager</h3>
@@ -244,7 +244,13 @@ const ChatPage = () => {
                                 className={`message-wrapper ${msg.sender}`}
                             >
                                 <div className="message-icon">
-                                    {msg.sender === 'bot' ? <Bot size={16} /> : <User size={16} />}
+                                    {msg.sender === 'bot' ? (
+                                        <div className="bot-msg-avatar">
+                                            <img src="/omkar.jpg" alt="Omkar" />
+                                        </div>
+                                    ) : (
+                                        <User size={16} />
+                                    )}
                                 </div>
                                 <div className="message-bubble glass">
                                     <p>{msg.text}</p>
